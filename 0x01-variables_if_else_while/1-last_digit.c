@@ -1,35 +1,32 @@
+#include <stdio.h>
 #include <stdlib.h>
-
 #include <time.h>
 
-#include <stdio.h>
-
-
 /**
- * main - This program will assign a random number to the variable n
- * Rturn: (0)
+ * main - Entry
+ * A program that prints the last digit
+ * Rturn: Always 0
  */
 int main(void)
-
 {
-
-	int n, lstd;
+	int n;
+	int l;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	l = n % 10;
 
-	lstd = n % 10;
-	if (lstd > 5)
+	if (l > 5)
 	{
-	printf("Last digit of %d is %d and is greater than 5\n", n, lstd);
+	printf("Last digit of %d is %d and is greater than 5\n", n, l);
 	}
-	else if (lstd == 0)
+	else if (l == 0)
 	{
-	printf("Last digit of %d is %d and is 0\n", n, lstd);
+	printf("Last digit of %d is %d and is 0\n", n, l);
 	}
-	else if (lstd < 6 && lstd != 0)
+	else
 	{
-	printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lstd);
+	printf("Last digit of %d is %d and is less than 6 and not 0\n", n, l);
 	}
 	return (0);
 }
