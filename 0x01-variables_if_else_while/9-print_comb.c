@@ -10,14 +10,15 @@ int main(void)
 {
 	int no;
 
-	for (no = 48; no < 58; no++)
+	for (no = 0; no < 100; no++)
+	{
 		putchar(no);
-
-		if (no != 57)
+		if (no < 99)
 		{
 			putchar(',');
 			putchar(' ');
 		}
-		putchar('\n');
+	}
+	putchar('\n');
 	return (0);
 }
