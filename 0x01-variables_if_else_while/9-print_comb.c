@@ -10,10 +10,10 @@ int main(void)
 {
 	int no;
 
-	for (no = 0; no < 100; no++)
+	for (no = 0; no < 10; no++)
 	{
 		putchar(no + '0');
-		if (no < 99)
+		if (no < 9)
 		{
 			putchar(',');
 			putchar(' ');
