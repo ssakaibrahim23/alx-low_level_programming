@@ -10,22 +10,22 @@
 int main(void)
 
 {
-	int a, b, c;
+	int d, p, q;
 
-	for (a = '0'; a < '9'; a++)
-	{
-
-	for (b = a + 1; b <= '9'; b++)
+	for (d = '0'; d < '9'; d++)
 	{
 
-	for (c = b + 1; c <= '9'; c++)
+	for (p = d + 1; p <= '9'; p++)
 	{
-	if ((b != a) != c)
+
+	for (q = p + 1; q <= '9'; q++)
 	{
-	putchar(a);
-	putchar(b);
-	putchar(c);
-	if (a == '7' && b == '8')
+	if ((p != d) != q)
+	{
+	putchar(d);
+	putchar(p);
+	putchar(q);
+	if (d == '7' && q == '8')
 	continue;
 	putchar(',');
 	putchar(' ');
@@ -34,4 +34,5 @@ int main(void)
 	}
 	}
 	putchar('\n');
+	return (0);
 }
