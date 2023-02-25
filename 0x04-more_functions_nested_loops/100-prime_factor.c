@@ -23,7 +23,7 @@ int main(void)
 	{
 		while (a % b == 0)
 		{
-			a = b;
+			ma = b;
 			a = a / b;
 		}
 	}
