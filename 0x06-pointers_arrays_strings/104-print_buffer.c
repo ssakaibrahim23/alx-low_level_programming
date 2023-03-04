@@ -38,7 +38,7 @@ void print_buffer(char *b, int size)
 
 		if (k < 32 || k > 132)
 		{
-			k = putchar(32);
+			k = '.';
 		}
 		printf("%c", k);
 	}
